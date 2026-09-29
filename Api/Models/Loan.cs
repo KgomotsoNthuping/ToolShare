@@ -1,6 +1,6 @@
 namespace Api.Models;
 
-public sealed class Loan 
+public class Loan 
 {
     public Guid Id { get; private set; }
 
@@ -12,7 +12,7 @@ public sealed class Loan
 
     public DateTime DueDate { get; private set; }
 
-    public LoanStatus Status { get; private set; }
+    // public LoanStatus Status { get; private set; }
 
     public DateTime? ReturnedAtUtc { get; private set; }
 

@@ -1,6 +1,6 @@
 namespace Api.Models;
 
-public sealed class Member
+public class Member
 {
     public Guid Id { get; private set; }
 

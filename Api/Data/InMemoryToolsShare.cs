@@ -2,7 +2,7 @@ using Api.Models;
 
 namespace Api.Data;
 
-public class InMemoryToolsShare : IToolShare
+public class InMemoryToolsShare : IToolsShare
 {
     private readonly List<Member> _members = [];
 
@@ -10,7 +10,7 @@ public class InMemoryToolsShare : IToolShare
 
     private readonly List<Loan> _loans = [];
 
-    public InMemoryToolShareStore()
+    public InMemoryToolsShare()
     {
         SeedData();
     }

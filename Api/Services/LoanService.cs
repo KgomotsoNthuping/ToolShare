@@ -6,7 +6,7 @@ namespace Api.Services;
 
 public sealed class LoanService : ILoanService
 {
-    private readonly IToolShare _store;
+    private readonly IToolsShare _store;
 
     // Stores successful checkout requests using their
     // Idempotency-Key so the same request can be retried safely.
@@ -17,7 +17,7 @@ public sealed class LoanService : ILoanService
     // while using the in-memory implementation.
     private readonly SemaphoreSlim _checkoutLock = new(1, 1);
 
-    public LoanService(IToolShare store)
+    public LoanService(IToolsShare store)
     {
         _store = store;
     }

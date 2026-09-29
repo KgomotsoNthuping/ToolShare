@@ -9,9 +9,9 @@ namespace Api.Controllers;
 [Route("api/members")]
 public class MembersController : ControllerBase
 {
-    private readonly IToolShare _memberRepository;
+    private readonly IToolsShare _memberRepository;
 
-    public MembersController(IToolShare memberRepository)
+    public MembersController(IToolsShare memberRepository)
     {
         _memberRepository = memberRepository;
     }
