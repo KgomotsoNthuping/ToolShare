@@ -170,14 +170,14 @@ public sealed class LoanService : ILoanService
 
 
     // Used to compare a repeated request with the request that originally used the key.
-    private record CheckoutSignature(
+    public record CheckoutSignature(
         Guid ToolId,
         Guid BorrowerId,
         DateTime DueDate);
 
 
     // Stores both the original checkout request and the Loan it created.
-    private record IdempotencyRecord(
+    public record IdempotencyRecord(
         CheckoutSignature Signature,
         Loan Loan);
 }
