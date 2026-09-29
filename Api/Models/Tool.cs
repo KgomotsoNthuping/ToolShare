@@ -45,7 +45,7 @@ public class Tool
     {
         if (string.IsNullOrWhiteSpace(category))
         {
-            throw new ArgumentException"A tool must have a category.");
+            throw new ArgumentException("A tool must have a category.");
         }
 
         return category.Trim();

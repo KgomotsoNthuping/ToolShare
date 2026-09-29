@@ -1,0 +1,7 @@
+namespace Api.Exceptions;
+
+// Used when a valid request conflicts with the current state of the system.
+public class ConflictException : Exception
+{
+    public ConflictException(string message) : base(message) { }
+}

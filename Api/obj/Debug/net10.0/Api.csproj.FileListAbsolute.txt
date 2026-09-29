@@ -1,0 +1,9 @@
+C:\Users\LCBitcube\Desktop\Repos\ToolShare\Api\obj\Debug\net10.0\Api.csproj.AssemblyReference.cache
+C:\Users\LCBitcube\Desktop\Repos\ToolShare\Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\LCBitcube\Desktop\Repos\ToolShare\Api\obj\Debug\net10.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LCBitcube\Desktop\Repos\ToolShare\Api\obj\Debug\net10.0\Api.AssemblyInfoInputs.cache
+C:\Users\LCBitcube\Desktop\Repos\ToolShare\Api\obj\Debug\net10.0\Api.AssemblyInfo.cs
+C:\Users\LCBitcube\Desktop\Repos\ToolShare\Api\obj\Debug\net10.0\Api.csproj.CoreCompileInputs.cache
+C:\Users\LCBitcube\Desktop\Repos\ToolShare\Api\obj\Debug\net10.0\Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\LCBitcube\Desktop\Repos\ToolShare\Api\obj\Debug\net10.0\Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LCBitcube\Desktop\Repos\ToolShare\Api\obj\Debug\net10.0\Api.sourcelink.json

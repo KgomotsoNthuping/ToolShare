@@ -40,6 +40,6 @@ public sealed class Member
             throw new ArgumentException("A valid email address is required.");
         }
 
-        return email.Trim()
+        return email.Trim();
     }
 }
