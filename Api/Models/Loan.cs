@@ -12,9 +12,11 @@ public class Loan
 
     public DateTime DueDate { get; private set; }
 
+    public string Status { get; private set; }
+
     // public LoanStatus Status { get; private set; }
 
-    public DateTime? ReturnedAtUtc { get; private set; }
+    public DateTime ReturnedAtUtc { get; private set; }
 
     public Loan(Guid toolId,Guid borrowerId,DateTime dueDate)
     {
@@ -34,10 +36,10 @@ public class Loan
         BorrowerId = borrowerId;
         CheckedOutAtUtc = DateTime.UtcNow;
         DueDate = dueDate;
-        Status = LoanStatus.CheckedOut;
+        // Status = LoanStatus.CheckedOut;
     }
 
-    public void Return()
+    /*public void Return()
     {
         if (Status == LoanStatus.Returned)
         {
@@ -46,5 +48,5 @@ public class Loan
 
         Status = LoanStatus.Returned;
         ReturnedAtUtc = DateTime.UtcNow;
-    }
+    }*/
 }

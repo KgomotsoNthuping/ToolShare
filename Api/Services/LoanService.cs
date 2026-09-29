@@ -1,10 +1,10 @@
-using Api.Data;
+/* using Api.Data;
 using Api.Models;
 using Api.Exceptions;
 
 namespace Api.Services;
 
-public sealed class LoanService : ILoanService
+ public sealed class LoanService : ILoanService
 {
     private readonly IToolsShare _store;
 
@@ -181,3 +181,5 @@ public sealed class LoanService : ILoanService
         CheckoutSignature Signature,
         Loan Loan);
 }
+
+*/

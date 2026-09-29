@@ -20,7 +20,7 @@ public class ToolsController: ControllerBase
     [HttpGet]
     public async Task<ActionResult<IReadOnlyCollection<Tool>>> GetAll()
     {
-        var tools = await _toolRepository.GetAllAsync();
+        var tools = await _toolRepository.GetToolsAsync();
 
         var response = tools.Select(tool => tool.ToResponse()).ToList();
 
@@ -29,10 +29,9 @@ public class ToolsController: ControllerBase
 
     // GET /api/tools/{id}
     [HttpGet("{id:guid}")]
-    public async Task<ActionResult<Tool>>
-        GetById(Guid id)
+    public async Task<ActionResult<Tool>>GetById(Guid id)
     {
-        var tool =await _toolRepository.GetByIdAsync(id);
+        var tool =await _toolRepository.GetToolByIdAsync(id);
 
         if (tool is null)
         {

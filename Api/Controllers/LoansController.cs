@@ -22,7 +22,7 @@ public sealed class LoansController : ControllerBase
     public async Task<
         ActionResult<IReadOnlyCollection<LoanResponse>>>GetAll()
     {
-        var loans =await _loanService.GetLoansAsync();
+        var loans =await _loanService.GetLoansAsync(); 
 
         var response = loans.Select(loan =>loan.ToResponse()).ToList();
 
@@ -44,13 +44,14 @@ public sealed class LoansController : ControllerBase
     // Checks out a Tool to a Member.
     [HttpPost]
     public async Task<ActionResult<LoanResponse>>
-        Checkout([FromBody] CreateLoanRequest request)
+        Checkout( [FromHeader(Name = "Idempotency-Key")] string idempotencyKey, [FromBody] CreateLoanRequest request)
     {
         var loan = await _loanService.CheckoutAsync(
                 request.ToolId,
                 request.BorrowerId,
                 request.DueDate,
-                idempotencyKey);
+                idempotencyKey
+                );
 
         var response = loan.ToResponse();
 

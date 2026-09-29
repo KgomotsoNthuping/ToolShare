@@ -20,7 +20,7 @@ public class MembersController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IReadOnlyCollection<Member>>> GetAll()
     {
-        var members = await _memberRepository.GetAllAsync();
+        var members = await _memberRepository.GetMembersAsync();
 
         var response = members.Select(member => member.ToResponse()).ToList();
 
@@ -31,7 +31,7 @@ public class MembersController : ControllerBase
     [HttpGet("{id:guid}")]
     public async Task<ActionResult<Member>>GetById(Guid id)
     {
-        var member = await _memberRepository.GetByIdAsync(id);
+        var member = await _memberRepository.GetMemberByIdAsync(id);
 
         if (member is null)
         {

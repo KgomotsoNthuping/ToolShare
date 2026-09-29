@@ -11,12 +11,12 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 builder.Services.AddSingleton<
-        IToolShare,
-        InMemoryToolShare>();
+        IToolsShare,
+        InMemoryToolsShare>();
 
-builder.Services.AddSingleton<
+/*builder.Services.AddSingleton<
         ILoanService,
-        LoanService>();
+        LoanService>();*/
 
 var app = builder.Build();
 

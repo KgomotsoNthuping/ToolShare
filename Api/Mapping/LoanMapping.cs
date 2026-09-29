@@ -13,7 +13,8 @@ public static class LoanMapping
             loan.BorrowerId,
             loan.CheckedOutAtUtc,
             loan.DueDate,
-            loan.Status.ToString(),
-            loan.ReturnedAtUtc);
+            loan.Status,
+            loan.ReturnedAtUtc
+            );
     }
 }

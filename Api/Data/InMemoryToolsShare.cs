@@ -190,8 +190,9 @@ public class InMemoryToolsShare : IToolsShare
     public Task<Loan?> GetActiveLoanForToolAsync(Guid toolId)
         {
             var loan =_loans.FirstOrDefault(loan =>
-                loan.ToolId == toolId &&
-                loan.Status == LoanStatus.CheckedOut);
+                loan.ToolId == toolId
+                // loan.Status == LoanStatus.CheckedOut
+                );
 
             return Task.FromResult(loan);
         }
